@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "plugins": [
+      "expo-router",
+      [
+        "expo-font",
+        {
+          "fonts": ["./assets/fonts/ClashDisplayFont/ClashDisplay-Medium.otf"],
+          "android": {
+            "fonts": [
+              {
+                "fontFamily": "ClashDisplay",
+                "fontDefinitions": [
+                  {
+                    "path": "./assets/fonts/ClashDisplayFont/ClashDisplay-Bold.otf",
+                    "weight": 800
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    ],
+    "scheme": "Book Store",
+    "experiments": {
+      "typedRoutes": true
+    },
+    "name": "book-store",
+    "slug": "book-store",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
