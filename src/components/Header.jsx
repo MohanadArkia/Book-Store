@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   },
 
   txtTitle: {
-    fontSize: 20,
+    fontSize: 17,
     letterSpacing: 3,
   },
 

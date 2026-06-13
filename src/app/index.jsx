@@ -12,7 +12,7 @@ const index = () => {
       <Header />
       <ForYouSection />
       <MenuFilter />
-      <Book title={"x64 Assembly Language Step-by-Step Programming With Linux 4th Edition"} image={"https://res.cloudinary.com/dmhpoq637/image/upload/v1781083404/assembly_book_x5jbgu.webp"} author={"Jeff Duntemann"} price={200} tags={["Programming"]}/>
+      <Book title={"x64 Assembly Language Step-by-Step Programming With Linux 4th Edition"} image={"https://res.cloudinary.com/dmhpoq637/image/upload/v1781083404/assembly_book_x5jbgu.webp"} author={"Jeff Duntemann"} price={200} />
     </SafeAreaView>
   );
 };

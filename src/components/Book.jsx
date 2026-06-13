@@ -1,11 +1,17 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
-import Tags from "./Tags";
+import { useRouter } from "expo-router";
 
 const Book = (props) => {
-  const { title, image, author, price, tags } = props;
+  const { title, image, author, price } = props;
+  const nav = useRouter();
+
+  const goToBookInfo = () => {
+    nav.push({ pathname: "/BookInfo", params: props });
+  };
+
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={goToBookInfo}>
       <View style={styles.bookContainer}>
         <Image source={{ uri: image }} style={styles.image} />
         <View style={styles.bookInfoContainer}>
@@ -14,10 +20,9 @@ const Book = (props) => {
             <Text style={styles.author}>{author}</Text>
           </View>
           {price && <Text style={styles.titleAndPrice}>{price} INS</Text>}
-          {tags && <Tags tags={tags} />}
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 
@@ -51,5 +56,9 @@ const styles = StyleSheet.create({
 
   author: {
     color: "#0B8C7C",
+  },
+
+  tagContainer: {
+    flexDirection: "row",
   },
 });
