@@ -9,12 +9,11 @@ import React from "react";
 import TextF from "./TextF";
 import Book from "./Book";
 
-const Section = (props) => {
-
+const ForYouSection = () => {
   return (
     <View style={styles.container}>
       <View style={styles.sectionContainer}>
-        <TextF style={styles.title} text={"For you"} />
+        <TextF style={styles.title} text={"For You"} />
         <TouchableOpacity>
           <TextF text={"View All"} style={styles.viewAll} />
         </TouchableOpacity>
@@ -26,7 +25,7 @@ const Section = (props) => {
   );
 };
 
-export default Section;
+export default ForYouSection;
 
 const styles = StyleSheet.create({
   container: {

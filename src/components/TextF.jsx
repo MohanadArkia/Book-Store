@@ -3,8 +3,8 @@ import React from "react";
 import { useFonts } from "expo-font";
 
 const TextF = (props) => {
-  const {style, text} = props;
-  
+  const { style, text } = props;
+
   const [fontsLoaded] = useFonts({
     ClashDisplay: require("../../assets/fonts/ClashDisplayFont/ClashDisplay-Medium.otf"),
   });
